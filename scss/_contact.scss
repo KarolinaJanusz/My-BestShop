@@ -1,0 +1,87 @@
+@mixin name-email{
+    padding-bottom: 30px;
+    padding-right: 290px;
+    font-family: normal normal bold 11px/15px Open Sans;
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+    border-bottom: 2px solid gray;
+    margin-bottom: 50px;
+}
+
+.contact{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.left{
+    margin: 0 70px;
+    max-width: 450px;
+    h1{
+        font: normal normal normal 49px/57px Raleway;
+        padding-bottom: 20px; 
+    }
+    
+}
+
+
+.leaveadress{
+    font: normal normal normal 16px/22px Open Sans;
+    padding: 20px 0;
+}
+
+.email{
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    p{
+        font: normal normal 600 16px/22px Open Sans;
+        color: #A5A5A5;
+    }
+}
+
+.phone{
+    display: flex;
+    align-content: center;
+    p{
+        font: normal normal 600 16px/22px Open Sans;
+        color: #A5A5A5;
+    }
+}
+
+.email-number{
+    display: flex;
+    align-items: center;
+}
+
+
+.name-2{
+    @include name-email;
+}
+
+.email-2{
+    @include name-email;
+}
+
+.right{
+    max-width: 450px;
+    position: relative;
+}
+
+.checkbox{
+    margin-bottom: 20px;
+}
+
+.button{
+    padding: 20px 50px;
+    background-color: #08A6E4;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+    border-radius: 35px;
+    border: none;
+    font-family: normal normal bold 13px/18px Open Sans;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    margin: 30px 0;
+}

@@ -1,0 +1,99 @@
+.statistics{
+    text-align: center;
+    h2{
+        text-align: center;
+        font: normal normal normal 36px/42px Raleway;
+        color: #000000;
+        @media (max-width: $small){
+            margin-top: 50px;
+        }
+    }
+    h5{
+        font: normal normal 800 20px/24px Raleway;
+        letter-spacing: 5.96px;
+        color: #000000;
+        margin-top: 30px;
+    }
+    p{
+        font: normal normal normal 17px/20px Raleway;
+        letter-spacing: 0;
+        color: #A5A5A5;
+    }
+}
+
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $small){
+        display: inline;
+    }
+}
+
+.box-1{
+    margin: 90px;
+}
+
+
+@mixin statistics{
+    display: block;
+    content: "";
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+
+
+.image-area-1{
+    position: relative;
+    z-index: 1;
+    &::before{
+        @include statistics;
+        background-color: #FB3B64;
+        left: 18px;
+        @media (max-width: $small){
+            left: 50%;
+            transform: translateX(-100%);
+        }
+    }
+}
+
+
+
+
+.image-area-2{
+    position: relative;
+    z-index: 1;
+    &::before{
+        @include statistics;
+        background-color: #08A6E4;
+        left: 50px;
+        top: -10px;
+        @media (max-width: $small){
+            left: 50%;
+            transform: translateX(-100%);
+        }
+    }
+}
+
+
+.image-area-3{
+    position: relative;
+    z-index:1;
+    &::before{
+    @include statistics;
+    background-color: #55DFB4;
+    left: 18px;
+    @media (max-width: $small){
+        left: 50%;
+        transform: translateX(-100%);
+    }
+}
+}
+
+

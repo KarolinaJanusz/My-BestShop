@@ -1,0 +1,147 @@
+@mixin column-h4{
+    font: normal normal bold 20px/1px Raleway;
+    color: #13253B;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+@mixin column-a{
+    font: normal normal bold 13px/41px Open Sans;
+    padding: 10px 60px;
+    background: #EB476E 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.columns{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    font: normal normal normal 36px/42px Raleway;
+    margin-bottom: 100px;
+}
+
+.column-1{
+    position: relative;
+    margin: 30px;
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+    padding: 30px 100px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    h1{
+        font: normal normal 300 46px/2px Open Sans;
+        color: #FB3B64;
+        margin-bottom: 80px;
+    }
+    h4{
+        @include column-h4;
+    }
+    li{
+        font: normal normal normal 14px/41px Open Sans;
+        list-style-type: none; 
+    }
+    a{
+        padding-bottom: 30px;
+        @include column-a;
+    }
+}
+
+
+.column-2{
+    position: relative;
+    box-shadow: 5px 10px 27px #07ACE629;
+    border: 1px solid #07ACE6;
+    border-radius: 18px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    .text-column-2{
+        padding: 50px 130px;
+    }
+    a{
+        padding-bottom: 30px;
+        @include column-a;
+    }
+    h4{
+        @include column-h4;
+    }
+    h1{
+        font: normal normal 300 46px/2px Open Sans;
+        color: #07ACE6;
+        margin-bottom: 30px;
+    }
+    p{
+        font: normal normal bold 12px/1px Raleway;
+        color: #13253B;
+        margin-bottom: 50px;
+    }
+    li{
+        list-style-type: none;
+        font: normal normal normal 14px/41px Open Sans;
+    }
+    
+}
+
+
+.column-3{
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #55DFB4;
+    border-radius: 18px;
+    padding: 30px 100px;
+    margin: 30px;
+    h4{
+        font: normal normal bold 20px/1px Raleway;
+        color: #13253B;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+    a{
+        @include column-a;
+    }
+    p{
+        font: normal normal bold 12px/1px Raleway;
+        color: #13253B;
+        margin-bottom: 50px;
+    }
+    h1{
+        font: normal normal 300 46px/2px Open Sans;
+        color: #FB3B64;
+        margin-bottom: 30px;
+    }
+    ul{
+        padding-bottom: 30px;
+        li{
+            font: normal normal normal 14px/41px Open Sans;
+            list-style-type: none;
+        }
+    }
+}
+
+
+
+.options{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin-bottom: 130px;
+}
+
+
+.checkmark::before{
+    content: "";
+    display: block;
+    background-image: url("../images/Checkmark.svg");
+    border: 1px solid #55DFB4;
+    border-radius: 2px;
+    height: 5px;
+    width: 5px;
+    background-position: center;
+    padding: 3px;
+    background-repeat: no-repeat;
+}
